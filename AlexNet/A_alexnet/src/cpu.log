@@ -1,0 +1,19 @@
+Training:Epoch[002/003] Iteration[351/352] Loss: 0.0611 Acc:97.37%
+Training:Epoch[002/003] Iteration[352/352] Loss: 0.0811 Acc:97.37%
+Valid:   Epoch[002/003] Iteration[625/625] Loss: 0.0709 Acc:97.32%
+循环运行时间:1711.23秒
+
+Training:Epoch[002/003] Iteration[350/352] Loss: 0.1127 Acc:97.40%
+Training:Epoch[002/003] Iteration[351/352] Loss: 0.0324 Acc:97.41%
+Training:Epoch[002/003] Iteration[352/352] Loss: 0.0147 Acc:97.41%
+Valid:   Epoch[002/003] Iteration[625/625] Loss: 0.0749 Acc:97.12%
+循环运行时间:740.04秒
+Training:Epoch[002/003] Iteration[174/176] Loss: 0.0656 Acc:96.90%
+Training:Epoch[002/003] Iteration[175/176] Loss: 0.0843 Acc:96.91%
+Training:Epoch[002/003] Iteration[176/176] Loss: 0.0926 Acc:96.91%
+Valid:   Epoch[002/003] Iteration[625/625] Loss: 0.0763 Acc:97.12%
+循环运行时间:660.18秒
+Training:Epoch[000/001] Iteration[175/176] Loss: 0.0937 Acc:94.85%
+Training:Epoch[000/001] Iteration[176/176] Loss: 0.0575 Acc:94.86%
+Valid:   Epoch[000/001] Iteration[625/625] Loss: 0.0888 Acc:96.68%
+循环运行时间:221.78秒

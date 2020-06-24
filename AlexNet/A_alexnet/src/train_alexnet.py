@@ -15,12 +15,15 @@ import torchvision.transforms as transforms
 import torch.optim as optim
 from matplotlib import pyplot as plt
 import torchvision.models as models
-from lesson.A_alexnet.tools.my_dataset import CatDogDataset
+
+import sys 
+sys.path.append('../../') 
+from A_alexnet.tools.my_dataset import CatDogDataset
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cpu")#("cuda" if torch.cuda.is_available() else "cpu")
 
-
+import time
 def get_model(path_state_dict, vis_model=False):
     """
     创建模型，加载参数
@@ -40,13 +43,13 @@ def get_model(path_state_dict, vis_model=False):
 
 
 if __name__ == "__main__":
-
+    start = time.time()
     # config
     data_dir = os.path.join(BASE_DIR, "..", "data", "train")
     path_state_dict = os.path.join(BASE_DIR, "..", "data", "alexnet-owt-4df8aa71.pth")
     num_classes = 2
 
-    MAX_EPOCH = 3       # 可自行修改
+    MAX_EPOCH = 1       # 可自行修改
     BATCH_SIZE = 128    # 可自行修改
     LR = 0.001          # 可自行修改
     log_interval = 1    # 可自行修改
@@ -197,7 +200,10 @@ if __name__ == "__main__":
     plt.legend(loc='upper right')
     plt.ylabel('loss value')
     plt.xlabel('Iteration')
-    plt.show()
+    plt.savefig("train_log.jpg")
+    #plt.show()
+    end = time.time()
+    print("循环运行时间:%.2f秒"%(end-start))
 
 
 
